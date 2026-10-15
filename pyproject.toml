@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svp"
+version = "0.1.0"
+description = "Software Verification Platform (MVP)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ruff>=0.3.0",
+    "bandit>=1.7.8",
+    "vulture>=2.11"
+]
+
+[project.scripts]
+svp = "svp.main:main"
+
+[tool.setuptools.packages.find]
+include = ["svp", "svp.*"]

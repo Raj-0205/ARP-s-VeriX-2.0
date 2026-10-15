@@ -1,0 +1,29 @@
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Python caches and environments
+.mypy_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# Frontend dependencies
+node_modules/
+
+# Generated scan reports
+SIMS REPORT/
+VXS_Reports/
+bug_tester_svp_report.txt
+sims_v2.2_svp_report.json
+svp_report.json
+verix_svp_report.json
+versions_svp_report.json

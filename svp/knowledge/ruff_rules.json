@@ -1,0 +1,7 @@
+{
+    "F401": {
+        "reason": "Module imported but unused. This wastes memory and litters the namespace.",
+        "recommendation": "Remove the unused import, or if required for side effects, add a # noqa comment.",
+        "references": ["PEP-8"]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "B608": {
+        "title": "Possible SQL Injection",
+        "reason": "Dynamic SQL query constructed using string formatting. User-controlled input can alter query structure.",
+        "recommendation": "Use parameterized queries to separate code from data.",
+        "bad_example": "cursor.execute(f'SELECT * FROM users WHERE id={uid}')",
+        "good_example": "cursor.execute('SELECT * FROM users WHERE id=?', (uid,))",
+        "references": ["CWE-89", "OWASP SQL Injection"]
+    }
+}
